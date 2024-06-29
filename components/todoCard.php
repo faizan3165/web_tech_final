@@ -10,13 +10,13 @@
                 </div>
 
                 <div class="card-footer d-flex justify-content-space-between">
-                    <a href="/project/src/scripts/complete_todo.php?id=<?php echo $todo["id"] ?>"
+                    <a href="/web_tech_final/src/scripts/complete_todo.php?id=<?php echo $todo["id"] ?>"
                         class="btn complete-btn card-link"><i class="fa-solid fa-check"></i></a>
 
-                    <a href="/project/views/pages/edit.php?id=<?php echo $todo["id"] ?>"
+                    <a href="/web_tech_final/views/pages/edit.php?id=<?php echo $todo["id"] ?>"
                         class="btn edit-btn card-link"><i class="fa-solid fa-pen-to-square"></i></a>
 
-                    <a href="/project/src/scripts/delete_todo.php?id=<?php echo $todo["id"] ?>"
+                    <a href="/web_tech_final/src/scripts/delete_todo.php?id=<?php echo $todo["id"] ?>"
                         class="btn delete-btn card-link"><i class="fa-solid fa-trash"></i></a>
                 </div>
             </div>

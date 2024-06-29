@@ -3,14 +3,14 @@
 <div class="container">
     <h1 class="display-2 text-white text-center my-5">Admin Panel</h1>
 
-    <ul class="nav nav-tabs nav-fill mb-3 bg-dark-subtle text-white" id="ex1" role="tablist">
+    <ul class="nav nav-tabs nav-fill mb-3 bg-dark-subtle" id="ex1" role="tablist">
         <li class="nav-item" role="presentation">
-            <a data-mdb-tab-init class="nav-link active" id="user-tab" href="#users" role="tab" aria-controls="users"
+            <a data-mdb-tab-init class="nav-link text-primary active" id="user-tab" href="#users" role="tab" aria-controls="users"
                 aria-selected="true">Users</a>
         </li>
 
         <li class="nav-item" role="presentation">
-            <a data-mdb-tab-init class="nav-link" id="todo-tab" href="#todos" role="tab" aria-controls="todos"
+            <a data-mdb-tab-init class="nav-link text-primary" id="todo-tab" href="#todos" role="tab" aria-controls="todos"
                 aria-selected="false">Todo's</a>
         </li>
     </ul>

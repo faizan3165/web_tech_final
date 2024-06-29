@@ -21,7 +21,7 @@
 
                 <td>
                     <div class="d-flex align-items-center">
-                        <img src="https://mdbootstrap.com/img/new/avatars/8.jpg" alt="" style="width: 45px; height: 45px"
+                        <img src="/web_tech_final/uploads/<?php echo $_SESSION['profile_picture']; ?>" alt="" style="width: 45px; height: 45px"
                             class="rounded-circle" />
 
                         <div class="ms-3">
@@ -44,7 +44,7 @@
                 </td>
 
                 <td>
-                    <a href="/project/src/scripts/delete_todo.php?id=<?php echo $todo["id"] ?>" class="delete-btn"><i
+                    <a href="/web_tech_final/src/scripts/delete_todo.php?id=<?php echo $todo["id"] ?>" class="delete-btn"><i
                             class="fa-solid fa-trash"></i></a>
                 </td>
             </tr>

@@ -6,7 +6,7 @@
                     <h4 class="bg-white rounded-pill p-2">Add Todo</h4>
                 </div>
 
-                <form action="/project/src/scripts/add_todo.php" method="POST">
+                <form action="/web_tech_final/src/scripts/add_todo.php" method="POST">
                     <div data-mdb-input-init class="form-outline mb-4">
                         <input type="text" name="title" id="title" class="form-control" required />
                         <label class="form-label" for="title">Title</label>

@@ -12,14 +12,14 @@ if (session_status() === PHP_SESSION_NONE) {
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <a class="navbar-brand mt-2 mt-lg-0" href="/project">
-                <img src="assets/icon.png" class="icon" alt="Logo" loading="lazy" />
+            <a class="navbar-brand mt-2 mt-lg-0" href="/web_tech_final">
+                <img src="/web_tech_final/assets/icon.png" class="icon" alt="Logo" loading="lazy" />
             </a>
 
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <?php if (isset($_SESSION['user_id']) && $_SESSION['isAdmin'] && $_SESSION['isAdmin'] === true): ?>
                     <li class="nav-item">
-                        <a class="nav-link" href="/project/views/pages/adminPanel.php">Admin Panel</a>
+                        <a class="nav-link" href="/web_tech_final/views/pages/adminPanel.php">Admin Panel</a>
                     </li>
                 <?php endif; ?>
             </ul>
@@ -29,7 +29,7 @@ if (session_status() === PHP_SESSION_NONE) {
             <?php
             if (!isset($_SESSION['user_id'])) {
                 ?>
-                <a href="/project/views/pages/login.php" class="mx-3 btn-floating" data-mdb-ripple-init
+                <a href="/web_tech_final/views/pages/login.php" class="mx-3 btn-floating" data-mdb-ripple-init
                     data-mdb-tooltip-init data-mdb-placement="bottom" title="Login">
                     <i class="fa-solid fa-user"></i>
                 </a>
@@ -37,13 +37,13 @@ if (session_status() === PHP_SESSION_NONE) {
                 <div class="dropdown">
                     <a data-mdb-dropdown-init class="dropdown-toggle d-flex align-items-center " href="#"
                         id="navbarDropdownMenuAvatar" role="button" aria-expanded="false">
-                        <img src="uploads/<?php echo $_SESSION['profile_picture']; ?>" class="rounded-circle" height="30"
+                        <img src="/web_tech_final/uploads/<?php echo $_SESSION['profile_picture']; ?>" class="rounded-circle" height="30"
                             width="30" alt="Profile Picture" />
                     </a>
 
                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuAvatar">
                         <li>
-                            <a class="dropdown-item" href="/project/src/scripts/logout.php">Logout</a>
+                            <a class="dropdown-item" href="/web_tech_final/src/scripts/logout.php">Logout</a>
                         </li>
                     </ul>
                 </div>
