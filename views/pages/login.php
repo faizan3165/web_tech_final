@@ -10,12 +10,12 @@
 
                 <form action="../../src/scripts/signin.php" method="POST">
                     <div data-mdb-input-init class="form-outline mb-4">
-                        <input type="email" name="email" id="email" class="form-control" />
+                        <input type="email" name="email" id="email" class="form-control text-white" />
                         <label class="form-label" for="email">Email address</label>
                     </div>
 
                     <div data-mdb-input-init class="form-outline mb-4">
-                        <input type="password" name="password" id="password" class="form-control" />
+                        <input type="password" name="password" id="password" class="form-control text-white" />
                         <label class="form-label" for="password">Password</label>
                     </div>
 

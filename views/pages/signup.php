@@ -11,21 +11,21 @@
                 <form action="../../src/scripts/register.php" method="POST" enctype="multipart/form-data">
                     <div data-mdb-input-init class="form-outline mb-4">
                         <label class="form-label" for="profile_picture">Upload Profile Picture</label>
-                        <input type="file" class="form-control" id="profile_picture" name="profile_picture" required />
+                        <input type="file" class="form-control text-white" id="profile_picture" name="profile_picture" required />
                     </div>
 
                     <div data-mdb-input-init class="form-outline mb-4">
-                        <input type="text" id="username" class="form-control" name="username" required />
+                        <input type="text" id="username" class="form-control text-white" name="username" required />
                         <label class="form-label" for="username">User name</label>
                     </div>
 
                     <div data-mdb-input-init class="form-outline mb-4">
-                        <input type="email" id="email" class="form-control" name="email" required />
+                        <input type="email" id="email" class="form-control text-white" name="email" required />
                         <label class="form-label" for="email">Email address</label>
                     </div>
 
                     <div data-mdb-input-init class="form-outline mb-4">
-                        <input type="password" id="password" class="form-control" name="password" required />
+                        <input type="password" id="password" class="form-control text-white" name="password" required />
                         <label class="form-label" for="password">Password</label>
                     </div>
 

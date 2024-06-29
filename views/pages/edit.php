@@ -16,14 +16,14 @@ include __DIR__ . '/../../src/scripts/fetch_todo.php';
                     <input type="hidden" name="todo_id" value="<?php echo htmlspecialchars($todo['id']); ?>">
 
                     <div data-mdb-input-init class="form-outline mb-4">
-                        <input type="text" name="title" id="title" class="form-control" required
+                        <input type="text" name="title" id="title" class="form-control text-white" required
                             value="<?php echo htmlspecialchars($todo['title']); ?>" />
 
                         <label class="form-label" for="title">Title</label>
                     </div>
 
                     <div data-mdb-input-init class="form-outline mb-4">
-                        <textarea class="form-control" name="task" id="task" rows="4" required>
+                        <textarea class="form-control text-white" name="task" id="task" rows="4" required>
                             <?php echo htmlspecialchars($todo['task']); ?>
                         </textarea>
                         <label class="form-label" for="task">Task</label>

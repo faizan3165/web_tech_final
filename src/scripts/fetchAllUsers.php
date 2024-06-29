@@ -6,10 +6,10 @@ if (session_status() === PHP_SESSION_NONE) {
 include __DIR__ . '/../db/connection.php';
 
 $sql = "
-    SELECT u.id, u.username, u.email, u.isAdmin, COUNT(t.id) AS todo_count
+    SELECT u.id, u.username, u.email, u.isAdmin, u.profile_picture, COUNT(t.id) AS todo_count
     FROM users u
     LEFT JOIN todos t ON u.id = t.author_id
-    GROUP BY u.id, u.username, u.email, u.isAdmin
+    GROUP BY u.id, u.username, u.email, u.isAdmin, u.profile_picture
 ";
 $result = mysqli_query($conn, $sql);
 

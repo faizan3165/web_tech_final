@@ -8,12 +8,12 @@
 
                 <form action="/web_tech_final/src/scripts/add_todo.php" method="POST">
                     <div data-mdb-input-init class="form-outline mb-4">
-                        <input type="text" name="title" id="title" class="form-control" required />
+                        <input type="text" name="title" id="title" class="form-control text-white" required />
                         <label class="form-label" for="title">Title</label>
                     </div>
 
                     <div data-mdb-input-init class="form-outline mb-4">
-                        <textarea class="form-control" name="task" id="task" rows="4" required></textarea>
+                        <textarea class="form-control text-white" name="task" id="task" rows="4" required></textarea>
                         <label class="form-label" for="task">Task</label>
                     </div>
 

@@ -14,6 +14,7 @@ if (session_status() === PHP_SESSION_NONE) {
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <a class="navbar-brand mt-2 mt-lg-0" href="/web_tech_final">
                 <img src="/web_tech_final/assets/icon.png" class="icon" alt="Logo" loading="lazy" />
+                DoneDash
             </a>
 
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">

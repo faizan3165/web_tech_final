@@ -9,7 +9,7 @@
                     <p class="card-text"><?php echo htmlspecialchars($todo['description']); ?></p>
                 </div>
 
-                <div class="card-footer d-flex justify-content-space-between">
+                <div class="card-footer d-flex justify-content-between">
                     <a href="/web_tech_final/src/scripts/complete_todo.php?id=<?php echo $todo["id"] ?>"
                         class="btn complete-btn card-link"><i class="fa-solid fa-check"></i></a>
 
