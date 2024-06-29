@@ -18,7 +18,7 @@ if (isset($_POST['add_todo'])) {
     if (mysqli_stmt_execute($stmt)) {
         $_SESSION['msg'] = "Todo added successfully.";
         $_SESSION['type'] = "success";
-        exit(header('Location: ../../index.php')); // Redirect after setting session variables
+        exit(header('Location: ../../index.php'));
     } else {
         $_SESSION['msg'] = "Error: " . mysqli_error($conn);
         $_SESSION['type'] = "danger";

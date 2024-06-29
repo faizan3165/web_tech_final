@@ -45,7 +45,7 @@ if (isset($_POST['submit'])) {
                         $_SESSION['username'] = $user['username'];
                         $_SESSION['email'] = $user['email'];
                         $_SESSION['profile_picture'] = $user['profile_picture'];
-                        $isAdmin = $user['isAdmin'];
+                        $isAdmin = (bool) $user['isAdmin'];
 
                         $_SESSION['msg'] = "Successfully registered in!";
                         $_SESSION['type'] = "success";

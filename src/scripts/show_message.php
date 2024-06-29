@@ -39,7 +39,7 @@ function showAlert($alertType, $message)
 
     echo '<div class="container d-flex justify-content-center align-items-center">';
     echo '<div class="alert ' . $alertClass . ' d-flex align-items-center alert-dismissible fade show form mt-5" role="alert">';
-    echo '<i class="' . $iconClass . ' fa-fw me-2"></i>'; // Font Awesome icon usage
+    echo '<i class="' . $iconClass . ' fa-fw me-2"></i>';
     echo '<div>' . htmlspecialchars($message) . '</div>';
     echo '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>';
     echo '</div>';

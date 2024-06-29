@@ -17,7 +17,7 @@ if (session_status() === PHP_SESSION_NONE) {
             </a>
 
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <?php if (isset($_SESSION['user_id']) && $_SESSION['isAdmin'] && $_SESSION['isAdmin'] === true): ?>
+                <?php if (isset($_SESSION['user_id']) && isset($_SESSION['isAdmin']) && $_SESSION['isAdmin'] === true): ?>
                     <li class="nav-item">
                         <a class="nav-link" href="/web_tech_final/views/pages/adminPanel.php">Admin Panel</a>
                     </li>
@@ -37,8 +37,8 @@ if (session_status() === PHP_SESSION_NONE) {
                 <div class="dropdown">
                     <a data-mdb-dropdown-init class="dropdown-toggle d-flex align-items-center " href="#"
                         id="navbarDropdownMenuAvatar" role="button" aria-expanded="false">
-                        <img src="/web_tech_final/uploads/<?php echo $_SESSION['profile_picture']; ?>" class="rounded-circle" height="30"
-                            width="30" alt="Profile Picture" />
+                        <img src="/web_tech_final/uploads/<?php echo $_SESSION['profile_picture']; ?>"
+                            class="rounded-circle" height="30" width="30" alt="pfp" />
                     </a>
 
                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuAvatar">

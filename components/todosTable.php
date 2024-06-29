@@ -35,7 +35,7 @@
                     <?php if ($todo['is_completed']): ?>
                         <span class="badge badge-success rounded-pill d-inline">Completed</span>
                     <?php else: ?>
-                        <span class="badge badge-primary rounded-pill d-inline">In Complete</span>
+                        <span class="badge badge-primary rounded-pill d-inline">In-Complete</span>
                     <?php endif; ?>
                 </td>
 
