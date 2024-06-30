@@ -38,8 +38,9 @@ if (session_status() === PHP_SESSION_NONE) {
                 <div class="dropdown">
                     <a data-mdb-dropdown-init class="dropdown-toggle d-flex align-items-center " href="#"
                         id="navbarDropdownMenuAvatar" role="button" aria-expanded="false">
-                        <img src="/web_tech_final/uploads/<?php echo $_SESSION['profile_picture']; ?>"
-                            class="rounded-circle" height="30" width="30" alt="pfp" />
+                        <img src="<?php echo $_SESSION['profile_picture']; ?>" class="rounded-circle" height="30" width="30"
+                            alt="Profile Picture" />
+
                     </a>
 
                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuAvatar">

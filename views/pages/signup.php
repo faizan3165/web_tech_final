@@ -10,8 +10,9 @@
 
                 <form action="../../src/scripts/register.php" method="POST" enctype="multipart/form-data">
                     <div data-mdb-input-init class="form-outline mb-4">
-                        <label class="form-label" for="profile_picture">Upload Profile Picture</label>
-                        <input type="file" class="form-control text-white" id="profile_picture" name="profile_picture" required />
+                        <input type="text" class="form-control text-white" id="profile_picture" name="profile_picture"
+                            required />
+                        <label class="form-label" for="profile_picture">Enter Profile Picture URL</label>
                     </div>
 
                     <div data-mdb-input-init class="form-outline mb-4">
