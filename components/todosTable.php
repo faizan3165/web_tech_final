@@ -21,7 +21,7 @@
 
                 <td>
                     <div class="d-flex align-items-center">
-                        <img src="/web_tech_final/uploads/<?php echo $_SESSION['profile_picture']; ?>" alt="" style="width: 45px; height: 45px"
+                        <img src="<?php echo $_SESSION['profile_picture']; ?>" alt="" style="width: 45px; height: 45px"
                             class="rounded-circle" />
 
                         <div class="ms-3">

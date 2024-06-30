@@ -8,7 +8,7 @@
                     <h4 class="bg-white rounded-pill w-25 p-1">Sign Up</h4>
                 </div>
 
-                <form action="../../src/scripts/register.php" method="POST" enctype="multipart/form-data">
+                <form action="../../src/scripts/register.php" method="POST">
                     <div data-mdb-input-init class="form-outline mb-4">
                         <input type="text" class="form-control text-white" id="profile_picture" name="profile_picture"
                             required />

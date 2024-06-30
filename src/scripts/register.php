@@ -5,12 +5,12 @@ include __DIR__ . '/../db/connection.php';
 if (isset($_POST['submit'])) {
     $username = $_POST['username'];
     $email = $_POST['email'];
-    $profile_picture = $_POST['profile_picture'];
+    $profile_picture = $_POST['profile_picture']; // Assuming profile_picture is a URL now
     $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
 
     $sql = "INSERT INTO `users` (`username`, `email`, `password`, `profile_picture`) VALUES (?, ?, ?, ?)";
     $stmt = mysqli_prepare($conn, $sql);
-    mysqli_stmt_bind_param($stmt, "sssb", $username, $email, $password, $profile_picture);
+    mysqli_stmt_bind_param($stmt, "ssss", $username, $email, $password, $profile_picture);
 
     if (mysqli_stmt_execute($stmt)) {
         $last_id = mysqli_insert_id($conn);
@@ -42,7 +42,6 @@ if (isset($_POST['submit'])) {
         $_SESSION['msg'] = "Error: " . mysqli_error($conn);
         $_SESSION['type'] = "warning";
     }
-
 
     header('Location: ../../register.php');
     exit;

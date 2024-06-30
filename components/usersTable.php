@@ -21,7 +21,7 @@
 
                 <td>
                     <div class="d-flex align-items-center">
-                        <img src="/web_tech_final/uploads/<?php echo $user['profile_picture']; ?>" alt="pfp" style="width: 45px; height: 45px"
+                        <img src="<?php echo $user['profile_picture']; ?> alt=" pfp" style="width: 45px; height: 45px"
                             class="rounded-circle" />
 
                         <div class="ms-3">
