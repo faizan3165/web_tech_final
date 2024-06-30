@@ -21,8 +21,8 @@
 
                 <td>
                     <div class="d-flex align-items-center">
-                        <img src="<?php echo $user['profile_picture']; ?> alt=" pfp" style="width: 45px; height: 45px"
-                            class="rounded-circle" />
+                        <img src="<?php echo htmlspecialchars($user['profile_picture']); ?>" alt="pfp"
+                            style="width: 45px; height: 45px" class="rounded-circle" />
 
                         <div class="ms-3">
                             <p class="fw-bold mb-1"><?php echo htmlspecialchars($user['username']); ?></p>
