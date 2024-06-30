@@ -25,14 +25,19 @@ if (isset($_POST['login'])) {
             $_SESSION['isAdmin'] = (bool) $user['isAdmin'];
 
             session_start();
+
+            $_SESSION['msg'] = "Successfully signed in!";
+            $_SESSION['type'] = "success";
+
             header('Location: ../../index.php');
-            showAlert('success', "Successfully Registered!");
             exit;
         } else {
-            showAlert('danger', "An Error has occurred, please try again.");
+            $_SESSION['msg'] = "An error has occurred. Please try again.";
+            $_SESSION['type'] = "success";
         }
     } else {
-        showAlert("warning", "User with that email does not exist.");
+        $_SESSION['msg'] = "User with that email does not exist, please try again";
+        $_SESSION['type'] = "success";
     }
 
     mysqli_stmt_close($stmt);

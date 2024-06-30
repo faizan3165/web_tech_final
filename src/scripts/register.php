@@ -47,7 +47,7 @@ if (isset($_POST['submit'])) {
                         $_SESSION['profile_picture'] = $user['profile_picture'];
                         $isAdmin = (bool) $user['isAdmin'];
 
-                        $_SESSION['msg'] = "Successfully registered in!";
+                        $_SESSION['msg'] = "Successfully registered!";
                         $_SESSION['type'] = "success";
 
                         header('Location: ../../index.php');
